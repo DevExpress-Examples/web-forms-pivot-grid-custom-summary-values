@@ -5,6 +5,9 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # How to provide custom summary values for Total, Grand Total and ordinary cells
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e2592/)**
+<!-- run online end -->
 
 
 <p>This example demonstrates how to determine the value type when you calculate custom summary values. <br>1. Set the data field's <a href="https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotGridFieldBase.SummaryType.property">SummaryType</a> property to <em>Custom</em> to perform calculations manually, by handling the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraPivotGridPivotGridControl_CustomSummarytopic"><u>CustomSummary</u></a> event. <br>2. Use the <a href="https://documentation.devexpress.com/#CoreLibraries/DevExpressXtraPivotGridDataPivotGridCustomSummaryEventArgsBase~T~_ColumnFieldtopic"><u>PivotGridCustomSummaryEventArgs.ColumnField</u></a> and <a href="https://documentation.devexpress.com/#CoreLibraries/DevExpressXtraPivotGridDataPivotGridCustomSummaryEventArgsBase~T~_RowFieldtopic"><u>PivotGridCustomSummaryEventArgs.RowField</u></a> properties to determine the kind of a processed cell. You can use the following rules to determine that a cell is being processed:</p>
