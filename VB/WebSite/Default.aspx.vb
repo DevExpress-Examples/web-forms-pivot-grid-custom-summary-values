@@ -1,4 +1,5 @@
 ﻿Imports System
+Imports System.Data
 Imports DevExpress.Web.ASPxPivotGrid
 Imports DevExpress.XtraPivotGrid
 
@@ -6,27 +7,26 @@ Partial Public Class _Default
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-
+        ASPxPivotGrid1.DataSource = GetData()
     End Sub
 
-    Protected Sub ASPxPivotGrid1_CustomSummary(ByVal sender As Object, ByVal e As PivotGridCustomSummaryEventArgs)
-        If ReferenceEquals(e.DataField, fieldProductAmount) Then
-            ' This is a Grand Total cell.
-            If ReferenceEquals(e.ColumnField, Nothing) OrElse ReferenceEquals(e.RowField, Nothing) Then
-                e.CustomValue = "Grand Total"
-                Return
-            End If
-            Dim pivot As ASPxPivotGrid = TryCast(sender, ASPxPivotGrid)
-            Dim lastRowFieldIndex As Integer = pivot.Fields.GetVisibleFieldCount(PivotArea.RowArea) -1
-            Dim lastColumnFieldIndex As Integer = pivot.Fields.GetVisibleFieldCount(PivotArea.ColumnArea) - 1
-
-            ' This is an ordinary cell.
-            If e.RowField.AreaIndex = lastRowFieldIndex AndAlso e.ColumnField.AreaIndex = lastColumnFieldIndex Then
-                e.CustomValue = e.SummaryValue.Average
-            ' This is a Total cell.
-            Else
-                e.CustomValue = "Total"
-            End If
-        End If
-    End Sub
+    Private Function GetData() As DataTable
+        Dim dt As New DataTable()
+        Dim rnd As New Random()
+        dt.Columns.Add("RowGroup", GetType(String))
+        dt.Columns.Add("Row", GetType(String))
+        dt.Columns.Add("ColumnGroup", GetType(String))
+        dt.Columns.Add("Column", GetType(String))
+        dt.Columns.Add("Data", GetType(Integer))
+        For rowGroup As Integer = 1 To 4
+            For row As Integer = 1 To 4
+                For columnGroup As Integer = 1 To 4
+                    For column As Integer = 1 To 4
+                        dt.Rows.Add("Row Group" & rowGroup, "Row" & row, "Column Group" & columnGroup, "Column" & column, rnd.Next(100))
+                    Next column
+                Next columnGroup
+            Next row
+        Next rowGroup
+        Return dt
+    End Function
 End Class
