@@ -16,7 +16,7 @@ This example demonstrates how to determine the value type when you calculate cus
 
 ## Example Overview
 
-Follow the steps below to create a custom summary:
+Follow the steps below to create a custom summary.
 1. Create an [ExpressionDataBinding](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPivotGrid.ExpressionDataBinding?p=netframework) object.
 2. Pass the following expression in its constructor as a parameter:
 
