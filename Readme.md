@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Pivot Grid for Web Forms - How to Specify Custom Summary Values for Total, Grand Total and Ordinary Cells
+# Pivot Grid for Web Forms - How to Specify Custom Summary Values for Total, Grand Total, and Ordinary Cells
 
 This example demonstrates how to determine the value type when you calculate custom summary values.
 <!-- default file list -->
