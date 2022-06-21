@@ -9,6 +9,8 @@
 <!-- run online end -->
 
 This example demonstrates how to determine the value type when you calculate custom summary values.
+
+![Pivot Grid](images/image.png)
 <!-- default file list -->
 ## Files to Look at 
 
