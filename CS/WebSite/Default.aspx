@@ -26,8 +26,8 @@ namespace="DevExpress.Web" tagprefix="dx" %>
                 </dxwpg:PivotGridField>
                 <dxwpg:PivotGridField ID="fieldData" AreaIndex="0" Area="DataArea">
                     <DataBindingSerializable>
-                        <dxwpg:ExpressionDataBinding Expression="iif(IsTotal([fieldColumnGroup]),'Grand Total',IsTotal([fieldRowGroup]),'Grand Total',
-                               IsTotal([fieldColumn]),'Total',IsTotal([fieldRow]),'Total',Sum([Data]))" />
+                        <dxwpg:ExpressionDataBinding Expression="iif(IsTotal([fieldColumnGroup]),'Grand Total',
+                               IsTotal([fieldRowGroup]),'Grand Total',IsTotal([fieldColumn]),'Total',IsTotal([fieldRow]),'Total',Sum([Data]))" />
                     </DataBindingSerializable>
                 </dxwpg:PivotGridField>
                 <dxwpg:PivotGridField ID="fieldRow" Area="RowArea" AreaIndex="1">
