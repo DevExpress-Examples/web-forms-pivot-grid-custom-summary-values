@@ -11,7 +11,7 @@
 <!-- default file list end -->
 # How to provide custom summary values for Total, Grand Total and ordinary cells
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e2592/)**
+**[[Run Online]](https://codecentral.devexpress.com/128577729/)**
 <!-- run online end -->
 
 
