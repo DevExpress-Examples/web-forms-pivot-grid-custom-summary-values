@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # Pivot Grid for Web Forms - How to Specify Custom Summary Values for Total, Grand Total, and Ordinary Cells
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128577729/)**
-<!-- run online end -->
 
 This example demonstrates how to determine the value type when you calculate custom summary values.
 
