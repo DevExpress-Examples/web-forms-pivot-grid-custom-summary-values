@@ -2,6 +2,7 @@
 ![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128577729/13.1.4%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E2592)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
+[![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
 <!-- default file list -->
 *Files to look at*:
@@ -10,9 +11,6 @@
 * **[Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))**
 <!-- default file list end -->
 # How to provide custom summary values for Total, Grand Total and ordinary cells
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128577729/)**
-<!-- run online end -->
 
 
 <p>This example demonstrates how to determine the value type when you calculate custom summary values. <br>1. Set the data field's <a href="https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotGridFieldBase.SummaryType.property">SummaryType</a> property to <em>Custom</em> to perform calculations manually, by handling the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraPivotGridPivotGridControl_CustomSummarytopic"><u>CustomSummary</u></a> event. <br>2. Use the <a href="https://documentation.devexpress.com/#CoreLibraries/DevExpressXtraPivotGridDataPivotGridCustomSummaryEventArgsBase~T~_ColumnFieldtopic"><u>PivotGridCustomSummaryEventArgs.ColumnField</u></a> and <a href="https://documentation.devexpress.com/#CoreLibraries/DevExpressXtraPivotGridDataPivotGridCustomSummaryEventArgsBase~T~_RowFieldtopic"><u>PivotGridCustomSummaryEventArgs.RowField</u></a> properties to determine the kind of a processed cell. You can use the following rules to determine that a cell is being processed:</p>
@@ -21,3 +19,10 @@
 <br/>
 
 
+<!-- feedback -->
+## Does this example address your development requirements/objectives?
+
+[<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=web-forms-pivot-grid-custom-summary-values&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=web-forms-pivot-grid-custom-summary-values&~~~was_helpful=no)
+
+(you will be redirected to DevExpress.com to submit your response)
+<!-- feedback end -->
